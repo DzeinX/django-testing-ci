@@ -27,7 +27,9 @@ jobs:
       run: |
         python -m venv venv
         ls venv
-        venv/Scripts/Activate.ps1
+        source venv/bin/activate
+    - name: Change to root directory
+      run: |
         cd budgetproject
     - name: Install dependencies
       run: |
