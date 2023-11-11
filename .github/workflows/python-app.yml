@@ -26,8 +26,8 @@ jobs:
     - name: Install venv
       run: |
         python -m venv venv
-        ls venv
-        venv/Scripts/activate.ps1
+        ls venv/Scripts
+        venv/Scripts/Activate.ps1
         cd budgetproject
     - name: Install dependencies
       run: |
