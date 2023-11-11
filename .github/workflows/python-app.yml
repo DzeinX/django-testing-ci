@@ -25,6 +25,7 @@ jobs:
         python-version: "3.9"
     - name: Install venv
       run: |
+        pip install virtualenv
         python -m virtualenv
         ls
         venv/Scripts/activate.ps1
